@@ -1,5 +1,8 @@
 <section ng-controller="HomeCtrl as home">
   <div class="navbar">
     <h1>Let's Chat with BlocChat! </h1>
+    <h2 ng-repeat="room in home.rooms track by $index">
+      Room {{ $index + 1 }}
+    </h2>
   </div>
 </section>
